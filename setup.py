@@ -90,7 +90,7 @@ def get_config_schema():
                 help="Assumed CUDA version, in the form 3010 for 3.1.",
             ),
             IncludeDir("CUDA", None),
-            Switch("CUDA_ENABLE_GL", False, "Enable CUDA GL interoperability"),
+            Switch("CUDA_ENABLE_GL", True, "Enable CUDA GL interoperability"),
             Switch("CUDA_ENABLE_CURAND", True, "Enable CURAND library"),
             LibraryDir("CUDADRV", default_lib_dirs),
             Libraries("CUDADRV", ["cuda"]),
